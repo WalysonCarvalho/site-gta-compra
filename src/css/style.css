@@ -1,0 +1,279 @@
+body {
+    background-color: #282828;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+    
+
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh -80px);
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100px;
+
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes img {
+    max-width: 150px;
+    display: flex;
+}
+
+.home .informacoes .gta-img {
+    display: flex;
+    gap: 32px;
+
+
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex;
+    gap: 32px;
+
+}
+
+.home .informacoes .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+
+.home .informacoes .texto {
+    font-family: 'Chalet';
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.button-comprar, .button-plataforma {
+    background-color: rgb(255, 255, 255, .3);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'Arial';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .2s ease-in-out;
+
+}
+
+
+
+[transition-style="out:square:top-right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-out-top-right both;
+}
+
+.button-plataforma {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-comprar:hover {
+    background-color: #fff;
+    color: #0b0b0b;
+
+}
+
+.compre-ja .capa-do-jogo {
+    width: 300px;
+}
+
+.compre-ja {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.compre-ja .titulo {
+    font-family: 'Arial';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+}
+
+.compre-ja .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b0b0b;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Arial';
+
+}
+
+.compre-ja .informacoes h3 {
+    font-family: 'Arial';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes p {
+    color: #e8e8e8;
+    font: 'Arial';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre-ja .button-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .2s ease;
+    display: none;
+    opacity: 0;
+}
+
+
+
+.compre-ja .button-plataforma .plataformas.ativo {
+    display: flex;
+    transition: all 3s ease;
+    opacity: 1;
+}
+
+.button-plataforma .plataformas{
+    display: flex;
+}
+
+.compre-ja .button-plataforma .plataformas li {
+    padding: 20px;
+    border: solid 1px #eee;
+    transition: all .1s ease-in;
+
+
+
+}
+
+
+.compre-ja .button-plataforma .plataformas .pt1:hover {
+    background: rgb(9, 9, 90);
+   
+}
+.compre-ja .button-plataforma .plataformas .pt2:hover {
+    background: rgb(3, 180, 50);
+    border  : solid 1px rgb(0, 117,32)
+}
+.compre-ja .button-plataforma .plataformas .pt3:hover {
+    background: rgb(9, 9, 90);
+    border: solid 1px rgb(11, 11, 160);
+}
+.compre-ja .button-plataforma .plataformas .pt4:hover {
+    background: rgb(3, 180, 50);
+    border: solid 1px rgb(0, 117, 32);
+}
+.compre-ja .button-plataforma .plataformas .pt5:hover {
+    background: rgb(218, 141, 53);
+    border: solid 1px rgb(224, 120, 0);
+}
+
+
+
+.compre-ja .button-plataforma .plataformas .pt1{
+    border: solid 1px rgb(11,11, 160);
+    border-radius: 4px;
+}
+
+.compre-ja .button-plataforma .plataformas .pt2{
+    border  : solid 1px rgb(0, 245, 65);
+    border-radius: 4px;
+
+
+}
+
+.compre-ja .button-plataforma .plataformas .pt3 {
+    border: solid 1px rgb(11,11, 160);
+    border-radius: 4px;
+
+
+}
+
+.compre-ja .button-plataforma .plataformas .pt4{
+    border  : solid 1px rgb(2, 255, 70);
+    border-radius: 4px;
+
+
+}
+.compre-ja .button-plataforma .plataformas .pt5 {
+    border: solid 1px rgb(224, 120, 0);
+        border-radius: 4px;
+
+}
